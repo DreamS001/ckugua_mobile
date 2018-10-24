@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script>
+//        在移动端的页面在上面对加载页面的设备进行判断，如果不为移动设备，则跳转加载pc端样式
+        if(!(/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
+            window.location.href = 'http://www.ckugua.com';
+        }
+    </script>
+	<title>ckugua-mobile-首页</title>
+	<link href="./favicon.ico" rel="shortcut icon" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+	<!-- <script language="javascript"> 
+		(function(){
+		    var res = GetRequest();
+		    var par = res['index'];
+		    if(par!='gfan'){
+		        var ua=navigator.userAgent.toLowerCase();
+		        var contains=function (a, b){
+		            if(a.indexOf(b)!=-1){return true;}
+		        };
+		//将下面的http://caibaojian.com改成你的wap手机版页面地址 如我的 http://caibaojian.com
+		        var toMobileVertion = function(){
+		            window.location.href = 'http://www.baidu.com/'
+		        }
+		 
+		        if(contains(ua,"ipad")||(contains(ua,"rv:1.2.3.4"))||(contains(ua,"0.0.0.0"))||(contains(ua,"8.0.552.237"))){return false}
+		        if((contains(ua,"android") && contains(ua,"mobile"))||(contains(ua,"android") && contains(ua,"mozilla")) ||(contains(ua,"android") && contains(ua,"opera"))
+		    ||contains(ua,"ucweb7")||contains(ua,"iphone")){toMobileVertion();}
+		    }
+		})();
+		function GetRequest() {
+		   var url = location.href; //获取url中"?"符后的字串
+		   console.log(url)
+		   var theRequest = new Object();
+		   if (url.indexOf("?") != -1) {
+		      var str = url.substr(1);
+		      strs = str.split("&");
+		      for(var i = 0; i < strs.length; i ++) {
+		         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+		      }
+		   }
+		   return theRequest;
+		}
+	</script> -->
+
+	<script type="text/javascript" src="js/public.js"></script><!-- px转换rem -->
+	<link rel="stylesheet" type="text/css" href="css/mobile_rest.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile_index.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="logo_box"></div>
+		<div class="lright_btn"><span></span><span></span><span></span></div>
+		<div class="navBox">
+			<a href="javascript:;">首页</a>
+			<a href="javascript:;">产品</a>
+			<a href="javascript:;">营销工具</a>
+			<a href="javascript:;">关于我们</a>
+		</div>
+	</header><!-- /header -->
+
+	<div class="layout">
+	    <div class="banner">
+	        <ul class="clearfix">
+	            <li style="background: url('images/index/banner_4.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	            <li style="background: url('images/index/banner_1.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	            <li style="background: url('images/index/banner_2.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	            <li style="background: url('images/index/banner_3.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	            <li style="background: url('images/index/banner_4.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	            <li style="background: url('images/index/banner_1.png') no-repeat;background-size: cover;">
+	            	<p>次点苦瓜</p>
+	            	<p>为中小企业赋能</p>
+	            </li>
+	        </ul>
+	        <ul>
+	            <li class="now"></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+	    </div>
+	</div>
+
+	<div class="server_box">
+		<div class="ckg_w">
+			<div class="title">
+				<span>微信第三方开发服务平台</span>
+			</div>
+			<div class="item_box">
+				<div class="item">
+					<div class="img_box">
+						<img src="images/index/server_1.png">
+					</div>
+					<div class="word_box">
+						<span>微信小程序</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_box">
+						<img src="images/index/server_2.png">
+					</div>
+					<div class="word_box">
+						<span>公众号管家</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_box">
+						<img src="images/index/server_3.png">
+					</div>
+					<div class="word_box">
+						<span>新媒体代运营</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="img_box">
+						<img src="images/index/server_4.png">
+					</div>
+					<div class="word_box">
+						<span>直播小程序</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="prog_box">
+		<div class="ckg_w">
+			<div class="title">
+				<span>解决方案</span>
+				<span style="font-size: 0.32rem;color: #666666;margin: 0.267rem 0 0 0;">更加垂直的行业解决方案，满足广泛的业务需求</span>
+			</div>
+			<div class="item_box">
+				<div class="item" style="background: url('images/index/prog_1.png') no-repeat;background-color: rgba(0,0,0,0.6);background-size: cover;">
+					<span>新零售解决方案</span>
+					<span>为零售业搭建全渠道产品体系，打造O2O闭环，助力门店智慧升级</span>
+				</div>
+				<div class="item" style="background: url('images/index/prog_2.png') no-repeat;background-color: rgba(0,0,0,0.6);background-size: cover;">
+					<span>智慧餐饮解决方案</span>
+					<span>领先的餐饮行业解决方案，打造餐饮一体化管理与服务</span>
+				</div>
+				<div class="item" style="background: url('images/index/prog_3.png') no-repeat;background-color: rgba(0,0,0,0.6);background-size: cover;">
+					<span>智慧美业解决方案</span>
+					<span>拓客营销，移动会员化体系，提升用户体验，促进门店转化</span>
+				</div>
+				<div class="item" style="background: url('images/index/prog_4.png') no-repeat;background-color: rgba(0,0,0,0.6);background-size: cover;">
+					<span>社交电商解决方案</span>
+					<span>打造集分销、返利、拼团、O2O、B2、B2B2C等多模式电商解决方案</span>
+				</div>
+				<div class="item" style="background: url('images/index/prog_5.png') no-repeat;background-color: rgba(0,0,0,0.6);background-size: cover;">
+					<span>企业建站解决方案</span>
+					<span>自主搭建个性官网，集品牌展示与商城交易，轻松获取更多商机</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="deve_box">
+		<div class="ckg_w">
+			<div class="title">
+				<span>开发服务</span>
+				<span style="font-size: 0.32rem;color: #666666;margin: 0.267rem 0 0 0;">整合多平台开发技术  提供高效优质的应用开发服务</span>
+			</div>
+			<div class="item_box">
+				<div class="item">
+					<div class="left_img">
+						<img src="images/index/deve_1.png">
+					</div>
+					<div class="right_box">
+						<span>Android开发</span>
+						<span>覆盖多种智能终端，占据70%移动市场，企业快速推广APP的第一选择</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left_img">
+						<img src="images/index/deve_2.png">
+					</div>
+					<div class="right_box">
+						<span>ios开发</span>
+						<span>瞄准中高端客户，打入APP收费市场，助您获取移动应用第一桶金。</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left_img">
+						<img src="images/index/deve_3.png">
+					</div>
+					<div class="right_box">
+						<span>微信小程序开发</span>
+						<span>“掌控”时代，让你的用户操作更便捷。</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left_img">
+						<img src="images/index/deve_4.png">
+					</div>
+					<div class="right_box">
+						<span>微信公众平台开发</span>
+						<span>链接微信至10亿用户，精准营销打开市场格局。</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="left_img">
+						<img src="images/index/deve_5.png">
+					</div>
+					<div class="right_box">
+						<span>HTML5开发</span>
+						<span>以新技术增强网站渲染效果，提高SEO维护优势，感受更强的互动体验。</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="case_box" style="background: url('images/index/hxbj.png') no-repeat;background-size: cover;height: 10.667rem;">
+		<div class="">
+			<div class="title">
+				<span style="color: #ffffff;">核心场景</span>
+				<span style="font-size: 0.32rem;color: #ffffff;margin: 0.267rem 0 0 0;">更多小程序的应用场景</span>
+			</div>
+			<div class="item_box">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_1.png">
+					    		<span>附近的小程序</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_1.png">
+					    		<span>附近的小程序</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_2.png">
+					    		<span>顶部聊天</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_2.png">
+					    		<span>顶部聊天</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_3.png">
+					    		<span>对话分享</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_3.png">
+					    		<span>对话分享</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_4.png">
+					    		<span>公众号关联</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_4.png">
+					    		<span>公众号关联</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_5.png">
+					    		<span>搜索查找</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_5.png">
+					    		<span>搜索查找</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_6.png">
+					    		<span>微信群分享</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_6.png">
+					    		<span>微信群分享</span>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide" style="display: flex;justify-content: space-between; padding: 0 6%;">
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_7.png">
+					    		<span>线下扫码</span>
+					    	</div>
+					    	<div class="hx_img">
+					    		<img src="images/index/hx_7.png">
+					    		<span>线下扫码</span>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="case_box">
+		<div class="">
+			<div class="title">
+				<span>案例展示</span>
+			</div>
+			<div class="item_box">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_1.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_1.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:食品</span>
+					    			<span>苦瓜新零售:解决新店缺客源/缺少新用户的难题,实现同城定位配送/在线领券/在线预订/课程培训/分享有礼等功能,让营销更加多样化,分享功能的放大,让每个用户成为品牌的宣传员.</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_2.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_2.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:制造业</span>
+					    			<span>苦瓜制造业：传统制造型企业打造小程序生态，充分利用微信平台大流量为传统线下生意赋能,实现在线展示、预约定制、拼团优惠等功能，日订单量和新用户转化翻倍。</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_3.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_3.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:医药产品</span>
+					    			<span>苦瓜电商:为传统线下门店搭建线上销售商城,实现在线秒杀/自动定位/定位就近下单/产品详情功能,为”N公里生活圈”类的品牌提供全新/便利的销售渠道,极大提高日下单量.</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_4.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_4.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:家居家具</span>
+					    			<span>苦瓜新零售：传统上市公司新零售转型，利用线上H5游戏与家居产品强关联，刺激线上粉丝、线下门店用户共同转化，为传统企业提供全新引流玩法，增加了店铺引流效率、日下单量、用户粘度。</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_5.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_5.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:快消百货</span>
+					    			<span>苦瓜电商:解决只有产品缺少销售渠道的难题,整合销售资源于微信商城,为产品提供曝光/展示/转化的出口,快速聚集线上年轻用户,,为品牌提供线上快速扩张新渠道.</span>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="top_img">
+					    		<img class="img" src="images/index/top_6.png">
+					    	</div>
+					    	<div class="bottom_desc">
+					    		<div class="bottom_logo" style="background: url('images/index/logo_6.png') no-repeat;background-size: cover;"></div>
+					    		<div class="bottom_word">
+					    			<span>经营类目:美容服务</span>
+					    			<span>苦瓜服务行业：传统服务行业转型小程序官网，全方位进行服务展示、在线预约、立即下单、转发领券服务闭环，解决缺乏新用户的烦恼。利用微信强大用户量，有效提高预约订单量，直接促进销售转化。</span>
+					    		</div>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="coop_box">
+		<div class="ckg_w">
+			<div class="title">
+				<span>合作伙伴</span>
+				<span style="font-size: 0.32rem;color: #666666;margin: 0.267rem 0 0 0;">次点苦瓜与合作伙伴共同打造互联网生态系统</span>
+			</div>
+			<div class="item_box">
+				<div class="item" style="background: url('images/index/coop_1.png') no-repeat;background-size: 1.227rem 0.32rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_2.png') no-repeat;background-size: 1.227rem 0.32rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_3.png') no-repeat;background-size: 1.227rem 0.373rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_4.png') no-repeat;background-size: 1.227rem 0.373rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_5.png') no-repeat;background-size: 1.227rem 0.347rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_6.png') no-repeat;background-size: 1.227rem 0.427rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_7.png') no-repeat;background-size: 1.227rem 0.453rem; background-position: center center;"></div>
+				<div class="item" style="background: url('images/index/coop_8.png') no-repeat;background-size: 1.227rem 0.333rem; background-position: center center;"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="dynamic_box">
+		<div class="ckg_w">
+			<div class="title" style="padding-bottom: 0.747rem;">
+				<span>小程序动态</span>
+				<span style="font-size: 0.32rem;color: #666666;margin: 0.267rem 0 0 0;">小程序各种动态及时更新，解决发展路上所有问题</span>
+			</div>
+			<div class="item_box">
+				<div class="item">
+					<a href="javascript:;">
+						<div class="left_box">
+							看完这篇就不用在到处问要怎么做了，小程序红利，你小程序红利，你
+						</div>
+						<div class="right_box"></div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;">
+						<div class="left_box">
+							看完这篇就不用在到处问要怎么做了，小程序红利，你小程序红利，你
+						</div>
+						<div class="right_box"></div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;">
+						<div class="left_box">
+							看完这篇就不用在到处问要怎么做了，小程序红利，你小程序红利，你
+						</div>
+						<div class="right_box"></div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;">
+						<div class="left_box">
+							看完这篇就不用在到处问要怎么做了，小程序红利，你小程序红利，你
+						</div>
+						<div class="right_box"></div>
+					</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;">
+						<div class="left_box">
+							看完这篇就不用在到处问要怎么做了，小程序红利，你小程序红利，你
+						</div>
+						<div class="right_box"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer_top">
+			<button class="phone_btn">
+				咨询电话：0371-58539678
+			</button>
+		</div>
+		<div class="footer_bottom">
+			Copyright © 2018 ckugua.com All Rights Reserved 沪ICP备18015899号-1
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="js/base.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/choumei.min.js"></script>
+</html>
